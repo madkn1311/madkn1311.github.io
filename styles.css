@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    background-color: #61C2A2;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    background-image: url('https://cdn.pixabay.com/photo/2017/05/19/06/22/desk-2325627_960_720.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header *{
+    position: relative;
+    z-index: 1;
+}
+
+header h1{
+    font-size: 50px;
+}
+
+header p{
+    font-size: 30px;
+    margin: 0;
+}
+
+header::after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+#projects{
+    text-align: center;
+}
+
+
+#projects h2{
+    background-color: #61C2A2;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding: 15px;
+}
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 810px;
+    margin: 20px auto 0;
+}
+
+.project-tile{
+    max-width: 250px;
+    margin: 40px;
+    background-color: #61C2A2;
+    box-shadow: 5px 10px 18px #888888;
+    transition: transform 0.3s ease-out;
+}
+
+.project-tile:hover{
+    transform: scale(1.1);
+}
+
+.project-tile a{
+    text-decoration: none;
+    color: white;
+}
+
+.project-tile img{
+    max-width: 100%;
+}
+
+#social-media{
+    text-align: center;
+    background-color: #98D7C2;
+    color: white;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.social-links{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links a{
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+footer{
+    background-color: #61C2A2;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
